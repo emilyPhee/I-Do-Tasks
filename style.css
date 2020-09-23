@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8DA9B9;
+  
+}
+
+.todo-card {
+  border-radius: 3px;
+
+  /* Modify the top margin of whole card */
+  margin-top: 15%;
+  margin-bottom: 39px;
+  height: 600px;
+  width: 450px;
+  background: #fff;
+  box-shadow: -15px -15px 0px 3px rgb(181, 181, 181);
+  text-align: center;
+}
+
+.card-header-title {
+  padding: 50px 25px;
+  text-align: center;
+}
+/* main title style */
+.title-my {
+  font-family: 'Nunito', sans-serif;
+  color: #8A8585;
+  font-size: 30px;
+  padding: 0 140px 0 0;
+  border-bottom: 3px solid #8A8585;
+  display: inline;
+}
+
+.title-tasks {
+  font-family: 'Shadows Into Light', cursive;
+  color: #64A2FF;
+  font-size: 55px;
+  margin-left: 87px;
+}
+
+.card-list-input-field {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+ 
+}
+
+.input {
+  width: 300px;
+  margin-right: 20px;
+  border: solid 1px rgb(194, 194, 194);
+  border-radius: 7px;
+}
+
+.button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgb(81, 154, 81);
+
+  transition: 0.2s all;
+  
+}
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  transform: translateY(-);
+  color: #64A2FF;
+}
+
+.button:active {
+  transform: translateY(.1rem);
+}
+
+/* body {
+  box-sizing: border-box;
+  background-color: #8DA9B9;
+}
+
+.todo-list-body {
+  background-color: #fff;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: -13px -13px 0px 3px rgb(181, 181, 181);
+  border: 1px solid rgb(150, 150, 150);
+  padding: 10px;
+
+  
+}
+
+.input-area {
+  padding-top: 400px;
+  padding-left: 30px;
+  
+}
+.input-box {
+  width: 350px;
+  height: 30px;
+  
+}
+.button {
+  margin: 15px;
+  border: none;
+  background: none;
+  cursor: pointer;
+} */
