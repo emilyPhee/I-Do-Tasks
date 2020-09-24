@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: inherit;
 }
+html {
+   /* 
+  what we want is 10px, so divide default px (16px) to 10 
+  10/16 = 0.625 
+  .625*16 = 10
+  we are converting this to percent because each user may have different font size as a default
+  so that we want to provide the right font size according to user's default value (px)
+  */
+  font-size: 62.5%;
+}
 
 body {
   box-sizing: border-box;
@@ -18,55 +28,61 @@ body {
 
   /* Modify the top margin of whole card */
   margin-top: 15%;
-  margin-bottom: 39px;
-  height: 600px;
-  width: 450px;
+  margin-bottom: .4rem;
+  height: 60rem;
+  width: 45rem;
   background: #fff;
-  box-shadow: -15px -15px 0px 3px rgb(181, 181, 181);
+  box-shadow: -1.5rem -1.5rem 0rem .3rem rgb(181, 181, 181);
   text-align: center;
 }
 
 .card-header-title {
-  padding: 50px 25px;
+  padding: 5rem 2.5rem;
   text-align: center;
 }
 /* main title style */
 .title-my {
   font-family: 'Nunito', sans-serif;
   color: #8A8585;
-  font-size: 30px;
-  padding: 0 140px 0 0;
-  border-bottom: 3px solid #8A8585;
+  font-size: 3rem;
+  padding: 0 14rem 0 0;
+  border-bottom: .3rem solid #8A8585;
   display: inline;
 }
 
 .title-tasks {
   font-family: 'Shadows Into Light', cursive;
   color: #64A2FF;
-  font-size: 55px;
-  margin-left: 87px;
+  font-size: 5.5rem;
+  margin-left: 8.7rem;
 }
 
+
+/* Input field */
 .card-list-input-field {
   display: flex;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 30rem;
  
 }
 
 .input {
-  width: 300px;
-  margin-right: 20px;
-  border: solid 1px rgb(194, 194, 194);
-  border-radius: 7px;
+  width: 30rem;
+  margin-right: 2rem;
+  border: solid .1rem rgb(194, 194, 194);
+  border-radius: .7rem;
+  padding-left: 1.7rem;
 }
+.input:focus {
+  outline: none;
+}
+
 
 .button {
   border: none;
   background: none;
   cursor: pointer;
   color: rgb(81, 154, 81);
-
   transition: 0.2s all;
   
 }
@@ -75,47 +91,10 @@ body {
 }
 
 .button:hover {
-  transform: translateY(-);
+  transform: translateY(-.1rem);
   color: #64A2FF;
 }
 
 .button:active {
-  transform: translateY(.1rem);
+  transform: translateY(.15rem);
 }
-
-/* body {
-  box-sizing: border-box;
-  background-color: #8DA9B9;
-}
-
-.todo-list-body {
-  background-color: #fff;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: -13px -13px 0px 3px rgb(181, 181, 181);
-  border: 1px solid rgb(150, 150, 150);
-  padding: 10px;
-
-  
-}
-
-.input-area {
-  padding-top: 400px;
-  padding-left: 30px;
-  
-}
-.input-box {
-  width: 350px;
-  height: 30px;
-  
-}
-.button {
-  margin: 15px;
-  border: none;
-  background: none;
-  cursor: pointer;
-} */
