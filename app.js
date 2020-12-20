@@ -19,7 +19,6 @@ function addTaskToList(e) {
     li.className = 'task-item';
     li.innerHTML = listElementGenerator(taskInput.value);
     ulElement.appendChild(li);
-    console.log(li);
     taskInput.value = '';
   }
   e.preventDefault();
@@ -38,5 +37,4 @@ function handleDeleteTask(e) {
   if (e.target.parentElement.parentElement.className === 'task-item') {
     e.target.parentElement.parentElement.remove();
   }
-  console.log(e.target.parentElement.parentElement.className);
 }
