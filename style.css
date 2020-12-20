@@ -29,7 +29,8 @@ body {
   /* Modify the top margin of whole card */
   margin-top: 15%;
   margin-bottom: .4rem;
-  height: 60rem;
+  /* height: 67rem; */
+  /* padding: 2rem; */
   width: 45rem;
   background: #fff;
   box-shadow: -1.5rem -1.5rem 0rem .3rem rgb(181, 181, 181);
@@ -59,17 +60,31 @@ body {
 
 
 /* Input field and button */
-.input {
+
+/* Input field */
+.card-list-input-field {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  padding: 2rem;
+} 
+#task-form {
+  display: flex;
+} 
+
+
+.task-input {
   width: 30rem;
+  height: 100%;
   margin-right: 2rem;
   border: solid .1rem rgb(194, 194, 194);
   border-radius: .7rem;
   padding-left: 1.7rem;
+  /* margin-bottom: 1.5rem; */
 }
-.input:focus {
+.task-input:focus {
   outline: none;
 }
-
 
 .button {
   border: none;
@@ -77,7 +92,7 @@ body {
   cursor: pointer;
   color: rgb(81, 154, 81);
   transition: 0.2s all;
-  
+
 }
 .button:focus {
   outline: none;
@@ -95,13 +110,16 @@ body {
 
 /* List Items */
 .card-todo-list {
-  height: 1.7rem;
   text-align: left;
   margin-left: 7rem;
+  margin-bottom: 2rem;
   color: #6b6b6b;
 
 }
 
+.unorder-list{
+  padding-bottom: 1.6rem;
+}
 
 
 .task-item {
@@ -115,12 +133,16 @@ body {
   border: none;
   background: none;
   cursor: pointer;
+  /* place trash icon to the right side */
+  float: right;
+  padding-right: 6rem;
 }
 .btn:focus {
   outline: none;
 }
 .trash-icon {
-  /* color: aqua; */
+  /* make alignment for trash icon */
+  margin-top: 1.2rem;
 }
 
 .trash-icon:hover {
@@ -133,11 +155,11 @@ span {
 }
 
 /* check box... */
-input[type=checkbox] {
+.list-check-box[type=checkbox] {
   position: relative;
   cursor: pointer;
 }
-input[type=checkbox]:before {
+.list-check-box[type=checkbox]:before {
   content: "";
   display: block;
   position: absolute;
@@ -149,7 +171,7 @@ input[type=checkbox]:before {
   border-radius: 2px;
   background-color: white;
 }
-input[type=checkbox]:checked:after {
+.list-check-box[type=checkbox]:checked:after {
   content: ""; 
   display: block;
   width: 5px;
@@ -168,11 +190,4 @@ input[type=checkbox]:checked:after {
   
 }
 
-/* Input field */
-.card-list-input-field {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
- 
-}
 
